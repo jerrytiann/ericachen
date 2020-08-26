@@ -22,8 +22,7 @@ body {
 
 nav {
     min-height: 10vh;
-    width: 90%;
-    margin: auto;
+    @include margin5;
     @include flexSpaceBetween;
     padding: 20px 0px;
 }
@@ -104,7 +103,7 @@ nav {
     top: 50%;
     transform: translateY(-50%);
 
-    &>div{
+    &>div {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -117,7 +116,7 @@ nav {
     }
 
 
-    svg{
+    svg {
         cursor: pointer;
         opacity: 0.5;
         transform: scale(2);
@@ -134,11 +133,103 @@ nav {
 }
 
 @keyframes pulse {
-    0%{
+    0% {
         transform: scale(2);
     }
 
-    100%{
+    100% {
         transform: scale(3);
+    }
+}
+
+
+/* ----------------Profiles-------------- */
+
+.banner {
+    height: 50vh;
+    width: 100%;
+    position: relative;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+
+.author {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    h1 {
+        font-size: 42px;
+    }
+
+    h3 {
+        padding: 10px 0px;
+        font-size: 32px;
+    }
+}
+
+.story,
+.my-work {
+    display: flex;
+    justify-content: space-between;
+    @include margin5;
+    padding: 80px 0px;
+}
+
+.story-description,
+.work-description {
+    width: 50%;
+    line-height: 150%;
+
+    h3 {
+        font-size: 36px;
+        padding-bottom: 30px;
+    }
+
+    p {
+        padding: 20px 0px;
+        font-size: 20px;
+    }
+}
+
+.work-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+
+    img {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .pages {
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 2fr 1fr;
+        align-items: center;
+    }
+
+    .hero {
+        grid-column: 2/3;
+        height: auto;
+
+        img {
+            height: 500px;
+        }
+    }
+
+    .details {
+        grid-row: 2/3;
+        grid-column: 2/3;
+        text-align: center;
     }
 }
