@@ -21,3 +21,21 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin ralewayRegular{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+@mixin ralewayBold{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+
+
+@mixin ralewayLight{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+}
+
+
