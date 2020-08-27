@@ -48,6 +48,11 @@ nav {
     justify-self: center;
     display: flex;
 
+    a {
+        display: flex;
+    }
+
+
     img {
         height: 568px;
         width: 189px;
@@ -125,9 +130,11 @@ nav {
             animation: pulse 0.5s ease-in-out infinite alternate;
         }
 
-        &.active {
-            opacity: 1;
-        }
+
+    }
+
+    svg.active {
+        opacity: 1;
     }
 
 }
@@ -210,6 +217,16 @@ nav {
     }
 }
 
+.chef,
+.hairstyle {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+
 
 @media (max-width: 1024px) {
 
@@ -237,7 +254,7 @@ nav {
         grid-column: 2/3;
         text-align: center;
 
-        h1{
+        h1 {
             font-size: 48px;
 
         }
@@ -248,15 +265,17 @@ nav {
     }
 
 
-    .story,.my-work{
+    .story,
+    .my-work {
         flex-direction: column;
     }
 
-    .story-description, .work-description{
+    .story-description,
+    .work-description {
         width: 100%;
     }
 
-    .work-gallery{
+    .work-gallery {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr))
     }
 
@@ -266,20 +285,20 @@ nav {
     }
 }
 
-@media (max-width: 758px){
+@media (max-width: 758px) {
 
-    .page{
+    .page {
         grid-template-rows: 2fr 1fr;
     }
 
     .hero {
-        img{
+        img {
             height: 380px;
         }
     }
 
-    .details{
-        h1{
+    .details {
+        h1 {
             font-size: 38px;
         }
 
@@ -287,4 +306,53 @@ nav {
             font-size: 28px;
         }
     }
+}
+
+
+/* ------------ nav bar ------------ */
+
+.nav-open {
+    background: white;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    z-index: 1;
+    color: black;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+
+    h3 {
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .social-links {
+        img {
+            padding: 0px 20px;
+        }
+    }
+}
+
+.contact {
+    grid-column: 2/3;
+
+}
+
+.logo,
+.menu {
+    z-index: 2;
+}
+
+.menu {
+    cursor: pointer;
 }
