@@ -2,7 +2,7 @@
 
 
 const hero = document.querySelector(".hero");
-const slider = document.querySelector('.slider');
+const landing = document.querySelector('.landing-bg');
 const logo = document.querySelector('#logo');
 const hamburger = document.querySelector('.hamburger');
 const headline = document.querySelector('.headline');
@@ -16,7 +16,7 @@ tl.fromTo(hero, 1, {
     height: "80%", ease: Power2.easeInOut
 })
 .fromTo(hero, 1, {width: "100%"}, {width: "90%"})
-.fromTo(slider, 1, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut}, "-=1.85")
+.fromTo(landing, 1, {x: "-100%"}, {x: "0%", ease: Power2.easeInOut}, "-=1.85")
 .fromTo(logo, 1, {opacity: 0, x:-30}, {opacity: 1, x:0}, "-=0.5")
 .fromTo(hamburger, 1, {opacity: 0, x:-30}, {opacity: 1, x:0}, "-=0.5")
 

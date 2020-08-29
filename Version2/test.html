@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/main.css">
+    
+</head>
+<body>
+<style>
+
+.h1test{
+    margin: 100px auto;
+    text-align: center;
+    font-size: 100px;
+    position: relative;
+}
+
+h1:after{
+    content: "";
+    display: block;
+    width: 320px;
+    height: 5px;
+    background-color: red;
+    position: absolute;
+    right: 30%;
+    top: 50%;
+    z-index: -2;
+}
+
+span{
+    background: white;
+}
+</style>
+    <div class="backgroundtest">
+        <h1 class="h1test"><span>TESTING</span></h1>
+    </div>
+</body>
+</html>

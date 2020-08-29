@@ -14,7 +14,7 @@ body {
   font-family: 'Raleway';
 }
 
-.slider {
+.landing-bg {
   position: absolute;
   top: 0;
   left: 0;
@@ -42,7 +42,7 @@ nav #logo {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  font-size: 36px;
+  font-size: 2rem;
 }
 
 nav .hamburger {
@@ -89,12 +89,42 @@ section {
 
 .headline {
   position: absolute;
-  top: 60%;
+  top: 80%;
   left: 15%;
-  font-size: 110px;
+  font-size: 6rem;
   color: white;
   -webkit-transform: translate(-20%, -70%);
           transform: translate(-20%, -70%);
   z-index: 5;
+}
+
+.headline::after {
+  content: "";
+  color: white;
+  width: 50px;
+  height: 30px;
+}
+
+.h1test {
+  margin: 100px auto;
+  text-align: center;
+  font-size: 100px;
+  position: relative;
+}
+
+h1:after {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 5px;
+  background-color: red;
+  position: absolute;
+  right: 30%;
+  top: 50%;
+  z-index: -2;
+}
+
+span {
+  background: white;
 }
 /*# sourceMappingURL=main.css.map */
