@@ -42,12 +42,11 @@ nav {
     }
 }
 
-section {
+.landing-section {
     display: flex;
-    height: 80vh;
+    height: 85vh;
     justify-content: center;
     align-items: center;
-
 }
 
 .hero {
@@ -82,14 +81,20 @@ section {
     transform: translate(-20%, -70%);
     z-index: 5;
 
-    &::after {
-        content: "";
-        color: white;
-        width: 50px;
-        height: 30px;
-    }
+    // &::after {
+    //     content: "";
+    //     background: white;
+    //     display: block;
+    //     position: absolute;
+    //     width: 60rem;
+    //     height: 10px;
+    // }
 }
 
 
-
-
+.project-section {
+    display: flex;
+    height: 85vh;
+    justify-content: center;
+    align-items: center;
+}

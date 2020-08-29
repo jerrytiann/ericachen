@@ -50,11 +50,11 @@ nav .hamburger {
       justify-self: end;
 }
 
-section {
+.landing-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
+  height: 85vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -98,33 +98,16 @@ section {
   z-index: 5;
 }
 
-.headline::after {
-  content: "";
-  color: white;
-  width: 50px;
-  height: 30px;
-}
-
-.h1test {
-  margin: 100px auto;
-  text-align: center;
-  font-size: 100px;
-  position: relative;
-}
-
-h1:after {
-  content: "";
-  display: block;
-  width: 320px;
-  height: 5px;
-  background-color: red;
-  position: absolute;
-  right: 30%;
-  top: 50%;
-  z-index: -2;
-}
-
-span {
-  background: white;
+.project-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 85vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
