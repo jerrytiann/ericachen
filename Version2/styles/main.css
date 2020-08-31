@@ -98,16 +98,100 @@ nav .hamburger {
   z-index: 5;
 }
 
-.project-section {
+.project {
+  height: 90vh;
+  background-color: #142850;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 85vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 0 150px;
+}
+
+.project a {
+  outline: none;
+  text-decoration: none;
+  color: #f1f3f8;
+  background: #00909e;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+.project a:hover {
+  background-color: #dae1e7;
+  color: #00909e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.project h1 {
+  display: block;
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.project h1::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 3px;
+  bottom: -3px;
+  background: red;
+}
+
+.project h3,
+.project p {
+  margin: 35px 0;
+}
+
+.project h3 {
+  font-size: 2.5rem;
+}
+
+.project p {
+  line-height: 150%;
+  font-size: 1.25rem;
+}
+
+.project h1 {
+  font-size: 5em;
+}
+
+.project-info {
+  padding: 0 50px;
+  max-width: 25%;
+}
+
+.project-imgs img {
+  width: 100%;
+}
+
+.project:nth-child(even) .project-info {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media only screen and (max-width: 1300px) {
+  .project {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 150px 0;
+  }
+  .project-info {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    max-width: 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
