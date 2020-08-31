@@ -20,7 +20,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to left, #ba7453, #d1a984);
+    background: linear-gradient(to left, #142850, #27496d);
     z-index: -1;
 }
 
@@ -104,11 +104,12 @@ nav {
 
 .project {
     height: 90vh;
-    background-color: #142850;
+    background: linear-gradient(to left, #142850, #27496d);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding: 0 150px;
+    color: #f1f3f8;
 
 
     a {
@@ -205,3 +206,57 @@ nav {
 }
 
 
+
+/* ------------ nav bar ------------ */
+nav {
+    min-height: 10vh;
+    @include margin5;
+    @include flexSpaceBetween;
+    padding: 20px 0px;
+}
+
+.nav-open {
+    background: white;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    z-index: 1;
+    color: black;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    transform: translateY(-100%);
+
+    h3 {
+        font-size: 28px;
+        padding-bottom: 40px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .social-links {
+        img {
+            padding: 0px 20px;
+        }
+    }
+}
+
+.contact {
+    grid-column: 2/3;
+
+}
+
+.logo,
+.menu {
+    z-index: 2;
+}
+
+.menu {
+    cursor: pointer;
+}

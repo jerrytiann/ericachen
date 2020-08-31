@@ -20,8 +20,8 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: -webkit-gradient(linear, right top, left top, from(#ba7453), to(#d1a984));
-  background: linear-gradient(to left, #ba7453, #d1a984);
+  background: -webkit-gradient(linear, right top, left top, from(#142850), to(#27496d));
+  background: linear-gradient(to left, #142850, #27496d);
   z-index: -1;
 }
 
@@ -100,7 +100,8 @@ nav .hamburger {
 
 .project {
   height: 90vh;
-  background-color: #142850;
+  background: -webkit-gradient(linear, right top, left top, from(#142850), to(#27496d));
+  background: linear-gradient(to left, #142850, #27496d);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,6 +112,7 @@ nav .hamburger {
       -ms-flex-align: center;
           align-items: center;
   padding: 0 150px;
+  color: #f1f3f8;
 }
 
 .project a {
@@ -193,5 +195,72 @@ nav .hamburger {
             order: 2;
     max-width: 50%;
   }
+}
+
+/* ------------ nav bar ------------ */
+nav {
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0px;
+}
+
+.nav-open {
+  background: white;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  z-index: 1;
+  color: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 1fr 1fr 5%;
+      grid-template-columns: 5% 1fr 1fr 5%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.nav-open h3 {
+  font-size: 28px;
+  padding-bottom: 40px;
+}
+
+.nav-open p {
+  font-size: 18px;
+}
+
+.nav-open .social-links img {
+  padding: 0px 20px;
+}
+
+.contact {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.logo,
+.menu {
+  z-index: 2;
+}
+
+.menu {
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
