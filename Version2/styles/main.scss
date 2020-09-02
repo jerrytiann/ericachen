@@ -24,23 +24,23 @@ body {
     z-index: -1;
 }
 
-nav {
-    display: grid;
-    grid-template-columns: 5% 1fr 1fr 5%;
-    min-height: 8vh;
-    color: white;
-    align-items: center;
-    padding-top: 30px;
+// nav {
+//     display: grid;
+//     grid-template-columns: 5% 1fr 1fr 5%;
+//     min-height: 8vh;
+//     color: white;
+//     align-items: center;
+//     padding-top: 30px;
 
-    #logo {
-        grid-column: 2/3;
-        font-size: 2rem;
-    }
+//     #logo {
+//         grid-column: 2/3;
+//         font-size: 2rem;
+//     }
 
-    .hamburger {
-        justify-self: end;
-    }
-}
+//     .hamburger {
+//         justify-self: end;
+//     }
+// }
 
 .landing-section {
     display: flex;

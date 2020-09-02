@@ -25,31 +25,6 @@ body {
   z-index: -1;
 }
 
-nav {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 5% 1fr 1fr 5%;
-      grid-template-columns: 5% 1fr 1fr 5%;
-  min-height: 8vh;
-  color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 30px;
-}
-
-nav #logo {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 1;
-  grid-column: 2/3;
-  font-size: 2rem;
-}
-
-nav .hamburger {
-  -ms-grid-column-align: end;
-      justify-self: end;
-}
-
 .landing-section {
   display: -webkit-box;
   display: -ms-flexbox;
