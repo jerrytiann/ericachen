@@ -130,7 +130,7 @@ nav {
             margin-left: 5px;
             opacity: 1;
             text-decoration: none;
-            
+
         }
 
     }
@@ -182,10 +182,11 @@ nav {
 .project-imgs {
     // justify-items: center;
     // justify-content: center;
-    display:grid;
+    display: grid;
     place-items: center;
+
     img {
-        width: 80%;
+        width: 90%;
     }
 }
 
@@ -204,13 +205,21 @@ nav {
         padding: 60% 0;
 
     }
-    
+
+    .project-imgs {
+        // justify-items: center;
+        // justify-content: center;
+
+        img {
+            width: 70%;
+        }
+    }
 
     .project-info {
         order: 2;
         max-width: 70%;
 
-        h1{
+        h1 {
             padding-top: 55px;
         }
     }
@@ -224,24 +233,26 @@ nav {
         flex-direction: column;
         padding: 250px 15px;
 
+        h1 {
+            font-size: 3em;
+            padding-top: 55px;
+        }
+
         h3,
         p {
             margin: 20px 0;
         }
-    
+
         h3 {
-            font-size: 1.5rem;
+            font-size: 2.25rem;
         }
-    
+
         p {
             line-height: 150%;
             font-size: 1.25rem;
         }
-    
-        h1 {
-            font-size: 2.25em;
-            padding-top: 25px;
-        }
+
+
 
 
     }

@@ -191,7 +191,7 @@ nav .hamburger {
 }
 
 .project-imgs img {
-  width: 80%;
+  width: 90%;
 }
 
 .project:nth-child(even) .project-info {
@@ -207,6 +207,9 @@ nav .hamburger {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 60% 0;
+  }
+  .project-imgs img {
+    width: 70%;
   }
   .project-info {
     -webkit-box-ordinal-group: 3;
@@ -227,20 +230,20 @@ nav .hamburger {
             flex-direction: column;
     padding: 250px 15px;
   }
+  .project h1 {
+    font-size: 3em;
+    padding-top: 55px;
+  }
   .project h3,
   .project p {
     margin: 20px 0;
   }
   .project h3 {
-    font-size: 1.5rem;
+    font-size: 2.25rem;
   }
   .project p {
     line-height: 150%;
     font-size: 1.25rem;
-  }
-  .project h1 {
-    font-size: 2.25em;
-    padding-top: 25px;
   }
   .project-info {
     -webkit-box-ordinal-group: 3;
