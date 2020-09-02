@@ -110,7 +110,6 @@ nav .hamburger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 150px;
 }
 
 .project a {
@@ -182,11 +181,17 @@ nav .hamburger {
 
 .project-info {
   padding: 0 50px;
-  max-width: 25%;
+  max-width: 35%;
+}
+
+.project-imgs {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .project-imgs img {
-  width: 100%;
+  width: 80%;
 }
 
 .project:nth-child(even) .project-info {
@@ -201,16 +206,16 @@ nav .hamburger {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 150px 0;
+    padding: 60% 0;
   }
   .project-info {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    max-width: 50%;
+    max-width: 70%;
   }
   .project-info h1 {
-    padding-top: 25px;
+    padding-top: 55px;
   }
 }
 

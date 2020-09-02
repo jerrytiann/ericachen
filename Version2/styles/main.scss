@@ -100,7 +100,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0 150px;
+
 
 
     a {
@@ -176,12 +176,16 @@ nav {
 
 .project-info {
     padding: 0 50px;
-    max-width: 25%;
+    max-width: 35%;
 }
 
 .project-imgs {
+    // justify-items: center;
+    // justify-content: center;
+    display:grid;
+    place-items: center;
     img {
-        width: 100%;
+        width: 80%;
     }
 }
 
@@ -197,24 +201,26 @@ nav {
 @media only screen and (max-width: 1300px) {
     .project {
         flex-direction: column;
-        padding: 150px 0;
+        padding: 60% 0;
+
     }
+    
 
     .project-info {
         order: 2;
-        max-width: 50%;
+        max-width: 70%;
 
         h1{
-            padding-top: 25px;
+            padding-top: 55px;
         }
     }
+
 
 }
 
 
 @media only screen and (max-width: 768px) {
     .project {
-
         flex-direction: column;
         padding: 250px 15px;
 
