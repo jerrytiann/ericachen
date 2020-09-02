@@ -20,8 +20,8 @@ body {
   left: 0;
   width: 100%;
   height: 100vh;
-  background: -webkit-gradient(linear, right top, left top, from(#ba7453), to(#d1a984));
-  background: linear-gradient(to left, #ba7453, #d1a984);
+  background: -webkit-gradient(linear, right top, left top, from(#142850), to(#1c325e));
+  background: linear-gradient(to left, #142850, #1c325e);
   z-index: -1;
 }
 
@@ -100,7 +100,8 @@ nav .hamburger {
 
 .project {
   height: 90vh;
-  background-color: #142850;
+  background: -webkit-gradient(linear, right top, left top, from(#142850), to(#1c325e));
+  background: linear-gradient(to left, #142850, #1c325e);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,6 +111,7 @@ nav .hamburger {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #f1f3f8;
 }
 
 .project a {
@@ -139,7 +141,7 @@ nav .hamburger {
 }
 
 .project a:hover:after {
-  margin-left: 5px;
+  margin-left: 8px;
   opacity: 1;
   text-decoration: none;
 }
@@ -220,6 +222,13 @@ nav .hamburger {
   .project-info h1 {
     padding-top: 55px;
   }
+  .project-info a:after {
+    content: '\f061';
+    font-family: 'FontAwesome';
+    margin-left: 10px;
+    opacity: 1;
+    vertical-align: middle;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -250,13 +259,6 @@ nav .hamburger {
         -ms-flex-order: 2;
             order: 2;
     max-width: 80%;
-  }
-  .project-info a:after {
-    content: '\f061';
-    font-family: 'FontAwesome';
-    margin-left: 10px;
-    opacity: 1;
-    vertical-align: middle;
   }
 }
 /*# sourceMappingURL=main.css.map */
