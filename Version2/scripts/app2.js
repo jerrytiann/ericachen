@@ -1,59 +1,4 @@
-// window.alert("hellow")
-
-function init() {
-
-
-
-
-    const hero = document.querySelector(".hero");
-    const landing = document.querySelector('.landing-bg');
-    const logo = document.querySelector('.logo');
-    const hamburger = document.querySelector('.menu');
-    const headline = document.querySelector('.headline');
-
-    const tl = new TimelineMax();
-
-    tl.fromTo(hero, 1, {
-            height: "0%"
-        }, {
-            height: "80%",
-            ease: Power2.easeInOut
-        })
-        .fromTo(hero, 1, {
-            width: "100%"
-        }, {
-            width: "90%"
-        })
-        .fromTo(landing, 1, {
-            x: "-100%"
-        }, {
-            x: "0%",
-            ease: Power2.easeInOut
-        }, "-=1.85")
-        .fromTo(logo, 1, {
-            opacity: 0,
-            x: -30
-        }, {
-            opacity: 1,
-            x: 0
-        }, "-=0.5")
-        .fromTo(hamburger, 1, {
-            opacity: 0,
-            x: -30
-        }, {
-            opacity: 1,
-            x: 0
-        }, "-=0.5");
-
-
-
-}
-
-
-
-
-function navAnimation() {
-
+function init(){
     const hamburger = document.querySelector(".menu");
     const hamburgerLines = document.querySelectorAll(".menu line");
     const navOpen = document.querySelector(".nav-open");
@@ -101,13 +46,12 @@ function navAnimation() {
     hamburger.addEventListener("click", () => {
         tl.reversed() ? tl.play() : tl.reverse();
     });
-
 }
 
 
 const app = () => {
     init();
-    navAnimation();
+    // init();
 }
 
 app();
