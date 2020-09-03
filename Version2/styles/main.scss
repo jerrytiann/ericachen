@@ -19,9 +19,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     background: linear-gradient(to left, #142850, #1c325e);
     z-index: -1;
+
 }
 
 
@@ -75,9 +76,9 @@ body {
     // }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
-    .headline{
+    .headline {
         font-size: 3rem;
     }
 
@@ -86,8 +87,9 @@ body {
     }
 
 
-    
+
 }
+
 ////////////////////////////////////////// Navbar section ////////////////////////////////////////
 nav {
     min-height: 10vh;
@@ -142,7 +144,7 @@ nav {
     cursor: pointer;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     nav {
         padding: 10% 5%;
     }
@@ -152,6 +154,40 @@ nav {
 
 
 ////////////////////////////////////////// Projects section ////////////////////////////////////////
+
+.project-section {
+    display: grid;
+    place-items: center;
+    color: white;
+    margin: 8vh 0;
+    background: linear-gradient(to left, #142850, #1c325e);
+
+    .project-header {
+
+        font-size: 4rem;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0.5rem;
+            height: 90%;
+            background: teal;
+            border-radius: 2rem;
+        }
+
+    }
+
+
+    .first-word {
+        margin-left: 0.8rem;
+    }
+}
+
+
+
 
 .project {
     height: 90vh;
@@ -294,6 +330,14 @@ nav {
         }
     }
 
+    .project-section {
+        margin-top: 10vh;
+
+        h1 {
+            font-size: 3.25rem;
+        }
+    }
+
 
 }
 
@@ -332,6 +376,14 @@ nav {
     .project-imgs {
         img {
             width: 80%;
+        }
+    }
+
+    .project-section {
+        margin-top: 10vh;
+
+        h1 {
+            font-size: 2.25rem;
         }
     }
 
