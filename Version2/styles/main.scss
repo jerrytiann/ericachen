@@ -24,29 +24,13 @@ body {
     z-index: -1;
 }
 
-// nav {
-//     display: grid;
-//     grid-template-columns: 5% 1fr 1fr 5%;
-//     min-height: 8vh;
-//     color: white;
-//     align-items: center;
-//     padding-top: 30px;
-
-//     #logo {
-//         grid-column: 2/3;
-//         font-size: 2rem;
-//     }
-
-//     .hamburger {
-//         justify-self: end;
-//     }
-// }
 
 .landing-section {
     display: flex;
-    height: 85vh;
+    height: 80vh;
     justify-content: center;
     align-items: center;
+    margin-bottom: 300pxl
 }
 
 .hero {
@@ -68,7 +52,7 @@ body {
         position: absolute;
         left: 0;
         top: 0;
-        opacity: 0.2;
+        opacity: 0.5;
     }
 }
 
@@ -91,6 +75,19 @@ body {
     // }
 }
 
+@media screen and (max-width: 768px){
+
+    .headline{
+        font-size: 3rem;
+    }
+
+    .landing-section {
+        padding: 0 5%;
+    }
+
+
+    
+}
 ////////////////////////////////////////// Navbar section ////////////////////////////////////////
 nav {
     min-height: 10vh;
@@ -143,6 +140,12 @@ nav {
 
 .menu {
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px){
+    nav {
+        padding: 10% 5%;
+    }
 }
 
 
@@ -226,7 +229,7 @@ nav {
     }
 
     h1 {
-        font-size: 5em;
+        font-size: 4.25em;
     }
 
 }
@@ -274,7 +277,7 @@ nav {
 
     .project-info {
         order: 2;
-        max-width: 70%;
+        max-width: 60%;
 
         h1 {
             padding-top: 55px;
@@ -298,11 +301,12 @@ nav {
 @media only screen and (max-width: 768px) {
     .project {
         flex-direction: column;
-        padding: 250px 15px;
+        padding: 0px 5px;
+        height: 150vh;
 
         h1 {
-            font-size: 3em;
-            padding-top: 55px;
+            font-size: 2.5em;
+            padding: 0;
         }
 
         h3,
@@ -311,23 +315,24 @@ nav {
         }
 
         h3 {
-            font-size: 2.25rem;
+            font-size: 2rem;
         }
 
         p {
             line-height: 150%;
-            font-size: 1.25rem;
+            font-size: 1rem;
         }
-
-
-
-
     }
 
     .project-info {
         order: 2;
-        max-width: 80%;
+        max-width: 95%;
+    }
 
+    .project-imgs {
+        img {
+            width: 80%;
+        }
     }
 
 }
