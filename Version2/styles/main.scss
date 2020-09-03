@@ -202,27 +202,27 @@ nav {
 
     img {
         width: 60%;
+        right: 0;
     }
 }
 
+@media only screen and (max-width: 1024px){
+    .profile {
+        flex-direction: column;
+        height: 80vh;
+    }
+
+}
 
 @media only screen and (max-width: 768px) {
     .profile {
         flex-direction: column;
-        height: 200vh;
-        .project-header {
-            font-size: 2.25rem;
-        }
+        height: 130vh;
+
     }
 
-
-    profile-imgs {
-        width: 80%;
-    }
-
-    .profile-info {
-        max-width: 100%;
-        order: 2;
+    .project-info {
+        max-width: 95%;
     }
 
 }

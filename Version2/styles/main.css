@@ -222,6 +222,17 @@ nav {
 
 .profile-imgs img {
   width: 60%;
+  right: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 80vh;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -230,19 +241,10 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    height: 200vh;
+    height: 130vh;
   }
-  .profile .project-header {
-    font-size: 2.25rem;
-  }
-  profile-imgs {
-    width: 80%;
-  }
-  .profile-info {
-    max-width: 100%;
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+  .project-info {
+    max-width: 95%;
   }
 }
 
