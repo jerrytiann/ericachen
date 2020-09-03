@@ -140,7 +140,7 @@ nav {
 }
 
 ///////////////////////////////////////// About me section ///////////////////////////////////////
-.profile{
+.profile {
     height: 50vh;
     display: flex;
     justify-content: space-evenly;
@@ -206,26 +206,25 @@ nav {
 }
 
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 768px) {
     .profile {
         flex-direction: column;
-        height: 100vh;
-
-        img {
-            width: 80%;
+        height: 200vh;
+        .project-header {
+            font-size: 2.25rem;
         }
-
-
-        
-    .project-header{
-        font-size: 2.25rem;
     }
 
-        
+
+    profile-imgs {
+        width: 80%;
     }
 
-    
-    
+    .profile-info {
+        max-width: 100%;
+        order: 2;
+    }
+
 }
 
 
@@ -461,7 +460,7 @@ nav {
         }
     }
 
-    .project-header{
+    .project-header {
         font-size: 1rem;
     }
 
