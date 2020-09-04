@@ -2,9 +2,6 @@
 
 function init() {
 
-
-
-
     const hero = document.querySelector(".hero");
     const landing = document.querySelector('.landing-bg');
     const logo = document.querySelector('.logo');
